@@ -1,0 +1,29 @@
+/*
+    Aciklama satiri bu sekilde yapiliyor ve htmlde oldugu gibi 
+    cssdede herhangi bir etki yapmiyor. kullanici tarafından gorulmuyor 
+*/
+body{
+    background-color: black;
+    color:aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color:hsl(22, 92%, 44%);
+    font-size: 44px;
+}
+
+p {
+    color: rgb(64, 162, 102);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* 
+    Metinsel ifadelerde;
+        - Fontlarına,
+        - Büyüklüklerine,
+        - Renklerine,
+        - Sadece buyuk veya kucuk olmasi
+    gibi opsiyonel durumda olan bir cok ozellige karisabiliyoruz.
+*/
