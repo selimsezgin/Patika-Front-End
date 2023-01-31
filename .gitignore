@@ -1,0 +1,10 @@
+# Images
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.tif
+
+#Videos
+*.mp4
+*.mov
