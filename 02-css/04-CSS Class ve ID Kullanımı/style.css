@@ -1,0 +1,59 @@
+/*
+    Elementler uzerinden css ile bicimlendirme yapmak pek saglikli degil
+    bu nedenle CLASS ve ID yapisi kullanilir
+    Class yapisi birden fazla elemente getirilebilir ancak
+    ID sadece bir elemente ozeldir sadece bir kere kullanilabilir
+
+    CSS kisminda Class ve ID olusturarak bicimlendirme yapmak icin iki anahtar
+    isaret var bunlar; 
+        - Class icin .
+        - ID icin #
+    
+    Ornek;
+        - Class: .text-red
+        - ID: #first-article
+
+        Bir elemente birden fazla class eklenebilir
+    !------------------------------------------------------------------------
+    Element ile css vermek istedigimizde birden fazla elemente ayni anda ayni
+    ozellikleri verebiliriz ornek butun basliklar yesil yapmak istiyorsak;
+
+    h1, h2, h3, h4, h5, h6{
+        color: green;
+    }
+
+    seklinde de kullanbiliriz
+*/
+
+.text-red{
+    color: red;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-26{
+    font-size: 26px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+#first-article{
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: rgb(69, 69, 69);
+}
+
+/*
+    CSS kisminda isimlendirme yaparken ozellikle isimleri akilda kalici yapmak gerek
+    cunku her seferinde css dosyamiza geri donup kontrol etme durumunda proje geriler
+*/
