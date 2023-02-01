@@ -1,0 +1,90 @@
+/*
+    CSS Selector
+    Class = .intro
+    !-------------------------------------------------
+    Id = #site-header
+    !-------------------------------------------------
+    .class.class = .name1.name2
+    ayni anda kullanilmalari gerekiyor, ikinci class her zaman birinci classdan
+    sonra gelmelidir bu bir elementte sira ile, ul-ol>li yapisinda ise
+    ul-ol yapisina birinci class, li elementine ikinci class gelmelidir
+    !-------------------------------------------------
+    element:last-child
+    ul-ol>li gibi yapilarda birden fazla alt element mevcuttur
+    bunlara child denebilir bu nedenle last yani en sonda olan elemente
+    class vermeden bicimlendirme yapilabilir
+    !-------------------------------------------------
+    element:first-child
+    ul-ol>li gibi yapilarda birden fazla alt element mevcuttur
+    bunlara child denebilir bu nedenle first yani en basta olan elemente
+    class vermeden bicimlendirme yapilabilir
+    !-------------------------------------------------
+    element:nth-child(x)-(odd)-(even)-(Xn)-(Xn+y)
+    ul-ol>li gibi yapilarda birden fazla alt element mevcuttur
+    bunlara child denebilir bununla nth kullanarak ister istedigimiz siradaki childi
+    ister odd kullanarak sadece tek sayili siralari
+    ister even kullanarak sadece cift sayili siralari
+    ister her Xn ile her X. kez olan elemani
+    ister Xn+y ile her X. kez olan eleman +y olan elemani bicimlendirir
+    !-------------------------------------------------
+*/
+
+.color-red{
+    color: red;
+}
+
+.color-blue.fw-bold{
+    color: blue;
+    font-weight: bold;
+}
+/*
+    Metnin color ozelligi blue olsun ama fw ozelligi bold ise
+*/
+
+ul > li:first-child{
+    color:blueviolet
+}
+/*
+    Bulunan tum ul>li yapisinda ilk elemanin ozelliklerini bicimlendirir
+*/
+
+ul > li:last-child{
+    color: tomato;
+}
+/*
+    Bulunan tum ul>li yapisinda son elemanin ozelliklerini bicimlendirir
+*/
+
+li:nth-child(2){
+    color: burlywood;
+}
+/*
+    ul>li yapisinda 2. sirada olan li elementinin ozelliklerini bicimlendirir
+*/
+
+li:nth-child(odd){
+    color: red;
+}
+/*
+    tek sayili sirada olanlari bicimlendirir
+*/
+
+li:nth-child(even){
+    color: blue;
+}
+/*
+    cift sayili sirada olanlari bicimlendirir
+*/
+
+li:nth-child(3n){
+    background-color: yellow;
+}
+/*
+    her 3 elemanda bir bu bicimlendirmeyi yapar
+*/
+li:nth-child(3n+2){
+    background-color: darkblue;
+}
+/*
+    her 3 eleman +1. elemani bicimlendirir
+*/
