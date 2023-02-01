@@ -27,6 +27,22 @@
     ister her Xn ile her X. kez olan elemani
     ister Xn+y ile her X. kez olan eleman +y olan elemani bicimlendirir
     !-------------------------------------------------
+    element[class-id-href$="...."]
+    element icerisinde bulunan class-id-href gibi ayirt edici ozellikleri olan
+    elementlerin sonu "...." ile belirtilen ile ayni ise bicimlendirir
+    !-------------------------------------------------
+    element[class-id-href*="...."]
+    element icerisinde bulunan class-id-href gibi ayirt edici ozellikleri olan
+    elementlerin basi "...." ile belirtilen ile ayni ise bicimlendirir
+    !-------------------------------------------------
+    element.class-adi
+    eger belirtilen element ile class adi uyusuyorsa bu sekilde bicimlendirir
+    !-------------------------------------------------
+    element > alt element
+    eger bir elementin icerisinde alt element varsa bu sekilde bicimlendirilebilir
+    !-------------------------------------------------
+    element > alt element > alt elementin alt elementi
+    bir nevi torun islevi gorur 3 element saglanmali ve bu sekilde bicimlendirebilir
 */
 
 .color-red{
@@ -87,4 +103,43 @@ li:nth-child(3n+2){
 }
 /*
     her 3 eleman +1. elemani bicimlendirir
+*/
+
+li[class$="test"]{
+    color:red;
+    background-color: black;
+}
+/*
+    class ismi test ile biten butun elementlere bu bicimlendirmeyi yapar
+*/
+
+li[class*="deneme"]{
+    color:blue;
+    background-color: burlywood;
+}
+/*
+    class ismi deneme ile baslayan butun elementlere bu bicimlendirmeyi yapar
+*/
+
+p.darkorchid{
+    color: darkorchid;
+}
+/*
+    belirtilen elementin class ismi eger ayni ise bu bicimlendirmeyi yapar
+*/
+
+p > span{
+    color:orange;
+    background-color: black;
+}
+/*
+    p elementi icerisinde bulunan span elementini bicimlendirir
+*/
+p > span > b{
+    color:red;
+    background-color: darkcyan;
+}
+/*
+    p elementi icerisinde bulunan span elementinin icerisin b elementi var ise
+    sadece b elementinin oldugu yeri bu sekilde bicimlendirir
 */
