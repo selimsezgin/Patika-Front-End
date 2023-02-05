@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS | Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS | End -->
+  </head>
+  <body>
+    <h1 class="d-block d-sm-none bg-danger">
+      <!-- Hep gorun ama eger sm olursa gorunme -->
+      XS - Mobil Gorunumlu Sitemize Hos Geldiniz!
+    </h1>
+    <h1 class="d-none d-sm-block d-md-none bg-info">
+      <!-- Hic ogrunme, eger sm olursa gorun, eger md olursa yine gorunme -->
+      SM - Tablet Gorunumlu Sitemize Hos Geldiniz!
+    </h1>
+    <h1 class="d-none d-md-block d-lg-none bg-primary">
+      <!-- Hic gorunme, eger md olursa gorun, eger lg olursa yine gorunme -->
+      MD - Laptop Gorunumlu Sitemize Hos Geldiniz!
+    </h1>
+    <h1 class="d-none d-lg-block d-xl-none bg-secondary">
+      <!-- Hic gorunme, eger lg olursa gorun, eger xl olursa yine gorunme -->
+      LG - Normal Ekran Gorunumlu Sitemize Hos Geldiniz!
+    </h1>
+    <h1 class="d-none d-xl-block bg-success">
+      <!-- Hic gorunme, eger xl olursa gorun-->
+      XL - Büyük Ekran Gorunumlu Sitemize Hos Geldiniz!
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-info">Lorem.</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-primary">
+          Voluptates.
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-secondary">
+          Repellat.
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-success">
+          Aliquam?
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-warning d-lg-none d-xl-block"
+        >
+          Molestias!
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger d-lg-none d-xl-block"
+        >
+          Sit!
+        </div>
+      </div>
+    </div>
+    <!-- Bootsrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootsrap Script -->
+  </body>
+</html>
+
+<!--
+  d-none : Hic bir yerde gorunme
+  ? ---------------------
+  d-(xs, sm, md, lg, xl)-block : Eger ekran bu olursa gorun
+  ? ---------------------
+  d-(xs, sm, md, lg, xl)-none : Eger ekran bu olursa gorunme
+-->
